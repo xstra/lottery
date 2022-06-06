@@ -6,4 +6,12 @@
     <string name="num4">7</string>
     <string name="num5">7</string>
     <string name="num7">7</string>
+    <string name="click_numbers">Click for lucky numbers.</string>
+    <string name="click_save">Click for saving lucky numbers.</string>
+    <string name="save1">null</string>
+    <string name="save2">null</string>
+    <string name="save3">null</string>
+    <string name="save4">null</string>
+    <string name="save5">null</string>
+    <string name="save6">null</string>
 </resources>

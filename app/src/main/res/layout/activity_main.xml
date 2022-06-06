@@ -8,38 +8,24 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieAnimationView"
-        android:layout_width="212dp"
-        android:layout_height="310dp"
-        android:scaleType="fitStart"
+        android:layout_width="400dp"
+        android:layout_height="253dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toStartOf="@+id/lottieAnimationView2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/money_rain" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottieAnimationView2"
-        android:layout_width="212dp"
-        android:layout_height="310dp"
-        android:scaleType="fitStart"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/money_rain" />
+        app:lottie_rawRes="@raw/winner" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +33,7 @@
 
         <TextView
             android:id="@+id/number1"
-            android:layout_width="60dp"
+            android:layout_width="55dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="4dp"
             android:background="@drawable/lottery_ball"
@@ -58,7 +44,7 @@
 
         <TextView
             android:id="@+id/number2"
-            android:layout_width="60dp"
+            android:layout_width="55dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="4dp"
             android:background="@drawable/lottery_ball"
@@ -69,7 +55,7 @@
 
         <TextView
             android:id="@+id/number3"
-            android:layout_width="60dp"
+            android:layout_width="55dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="4dp"
             android:background="@drawable/lottery_ball"
@@ -80,7 +66,7 @@
 
         <TextView
             android:id="@+id/number4"
-            android:layout_width="60dp"
+            android:layout_width="55dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="4dp"
             android:background="@drawable/lottery_ball"
@@ -91,7 +77,7 @@
 
         <TextView
             android:id="@+id/number5"
-            android:layout_width="60dp"
+            android:layout_width="55dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="4dp"
             android:background="@drawable/lottery_ball"
@@ -102,7 +88,7 @@
 
         <TextView
             android:id="@+id/number6"
-            android:layout_width="60dp"
+            android:layout_width="55dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="4dp"
             android:background="@drawable/lottery_ball"
@@ -112,15 +98,139 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/saveLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61">
+
+        <TextView
+            android:id="@+id/save1"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:gravity="center"
+            android:text="@string/save1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save2"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:gravity="center"
+            android:text="@string/save2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save3"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:gravity="center"
+            android:text="@string/save3"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save4"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:gravity="center"
+            android:text="@string/save4"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save5"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:gravity="center"
+            android:text="@string/save5"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save6"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/lottery_ball"
+            android:gravity="center"
+            android:text="@string/save6"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="220dp"
+        android:gravity="center"
+        android:text="@string/click_numbers"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lotteryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="250dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/click_save"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lotteryButton"
-        android:layout_width="350dp"
-        android:layout_height="267dp"
+        android:layout_width="159dp"
+        android:layout_height="121dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/lovely_cats" />
+        app:lottie_rawRes="@raw/click" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/saveButton"
+        android:layout_width="159dp"
+        android:layout_height="121dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/numbers_save" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
