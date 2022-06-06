@@ -29,7 +29,8 @@
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41">
 
         <TextView
             android:id="@+id/number1"
@@ -99,122 +100,191 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/saveLayout"
+        android:id="@+id/save1Layout"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61">
+        app:layout_constraintVertical_bias="0.533"
+        tools:layout_editor_absoluteX="8dp">
 
         <TextView
-            android:id="@+id/save1"
+            android:id="@+id/save11"
             android:layout_width="55dp"
             android:layout_height="60dp"
-            android:layout_marginHorizontal="4dp"
-            android:background="@drawable/lottery_ball"
+            android:layout_marginHorizontal="3dp"
             android:gravity="center"
-            android:text="@string/save1"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/save2"
+            android:id="@+id/save12"
             android:layout_width="55dp"
             android:layout_height="60dp"
-            android:layout_marginHorizontal="4dp"
-            android:background="@drawable/lottery_ball"
+            android:layout_marginHorizontal="3dp"
             android:gravity="center"
-            android:text="@string/save2"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/save3"
+            android:id="@+id/save13"
             android:layout_width="55dp"
             android:layout_height="60dp"
-            android:layout_marginHorizontal="4dp"
-            android:background="@drawable/lottery_ball"
+            android:layout_marginHorizontal="3dp"
             android:gravity="center"
-            android:text="@string/save3"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/save4"
+            android:id="@+id/save14"
             android:layout_width="55dp"
             android:layout_height="60dp"
-            android:layout_marginHorizontal="4dp"
-            android:background="@drawable/lottery_ball"
+            android:layout_marginHorizontal="3dp"
             android:gravity="center"
-            android:text="@string/save4"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/save5"
+            android:id="@+id/save15"
             android:layout_width="55dp"
             android:layout_height="60dp"
-            android:layout_marginHorizontal="4dp"
-            android:background="@drawable/lottery_ball"
+            android:layout_marginHorizontal="3dp"
             android:gravity="center"
-            android:text="@string/save5"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/save6"
+            android:id="@+id/save16"
             android:layout_width="55dp"
             android:layout_height="60dp"
-            android:layout_marginHorizontal="4dp"
-            android:background="@drawable/lottery_ball"
+            android:layout_marginHorizontal="3dp"
             android:gravity="center"
-            android:text="@string/save6"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/save2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632">
+
+        <TextView
+            android:id="@+id/save21"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save22"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save23"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save24"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save25"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save26"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
             android:textSize="30sp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/tv"
-        android:layout_width="0dp"
+        android:layout_width="145dp"
         android:layout_height="60dp"
         android:layout_marginEnd="220dp"
         android:gravity="center"
         android:text="@string/click_numbers"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/lotteryButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/tv2"
-        android:layout_width="0dp"
+        android:id="@+id/tv1"
+        android:layout_width="145dp"
         android:layout_height="60dp"
-        android:layout_marginStart="250dp"
-        android:gravity="bottom|center_horizontal"
+        android:layout_marginEnd="140dp"
+        android:gravity="center"
         android:text="@string/click_save"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/saveButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="145dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/click_reset"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lotteryButton"
-        android:layout_width="159dp"
-        android:layout_height="121dp"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
@@ -222,15 +292,30 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/saveButton"
-        android:layout_width="159dp"
-        android:layout_height="121dp"
-        android:scaleType="centerCrop"
+        android:layout_width="140dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="32dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toStartOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/numbers_save" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/resetButton"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="32dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/reset" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
