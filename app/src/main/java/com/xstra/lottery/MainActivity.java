@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
-
 import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -13,6 +12,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     TextView n6 = findViewById( R.id.number6 );
     TextView[] save1 = new TextView[6];
     TextView[] save2 = new TextView[6];
+    TextView[] save3 = new TextView[6];
 
     save1[0] = findViewById( R.id.save11 );
     save1[1] = findViewById( R.id.save12 );
@@ -41,14 +42,19 @@ public class MainActivity extends AppCompatActivity {
     save2[4] = findViewById( R.id.save25 );
     save2[5] = findViewById( R.id.save26 );
 
+    save3[0] = findViewById( R.id.save31 );
+    save3[1] = findViewById( R.id.save32 );
+    save3[2] = findViewById( R.id.save33 );
+    save3[3] = findViewById( R.id.save34 );
+    save3[4] = findViewById( R.id.save35 );
+    save3[5] = findViewById( R.id.save36 );
+
     final int[] random =new int[6];
-        final int[] count = {0};
 
     LottieAnimationView lotteryButton = findViewById( R.id.lotteryButton );
     LottieAnimationView saveButton = findViewById( R.id.saveButton );
     LottieAnimationView resetButton = findViewById( R.id.resetButton );
     ArrayList<TextView> Numbers = new ArrayList<>( Arrays.asList( n1, n2, n3, n4, n5, n6 ) );
-//    HashSet<TextView> Numbers = new HashSet<>(Arrays.asList( n1, n2, n3, n4, n5, n6 ));
     final CountDownTimer countDownTimer = new CountDownTimer( 2000, 100 ) {
             //2초 동안 0.1초의 간격으로 onTick 메소드를 호출합니다
             @Override
@@ -69,30 +75,33 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         lotteryButton.setOnClickListener( view -> {
-           // if (lotteryButton.isAnimating()) {
-           //     lotteryButton.cancelAnimation();
-           //     countDownTimer.cancel();
-            //} else {
                 lotteryButton.playAnimation();
                 countDownTimer.start();
-            //}
         } );
         saveButton.setOnClickListener( view -> {
-            count[0] = count[0] + 1;
-            if (count[0] == 1 || save1[0].getText().toString().equals( "" )) {
+            saveButton.playAnimation();
+
+            count += 1;
+            if (count == 1 || save1[0].getText().toString().equals( "" )) {
                 for (int i = 0; i < save1.length; i++) {
-                save1[i].setText( (Integer.toString( random[i] )) );
+                save1[i].setText( (String.valueOf( random[i] )) );
             }
-            } else if (count[0] == 2 || save2[0].getText().toString().equals( "" )) {
+            } else if (count == 2 || save2[0].getText().toString().equals( "" )) {
                 for (int i = 0; i < save2.length; i++) {
-                    save2[i].setText( (Integer.toString( random[i] )) );
+                    save2[i].setText( (String.valueOf( random[i] )) );
+                }
+            } else if (count == 3 || save3[0].getText().toString().equals( "" )) {
+                for (int i = 0; i < save3.length; i++) {
+                    save3[i].setText( (String.valueOf( random[i] )) );
                 }
             }
         } );
         resetButton.setOnClickListener( view -> {
+            resetButton.playAnimation();
             for (int i = 0; i < save1.length; i++) {
                 save1[i].setText(null);
                 save2[i].setText(null);
+                save3[i].setText(null);
             }
         });
     }
