@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
+
+import android.view.Gravity;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 
@@ -13,6 +16,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     int count=0;
+    Toast toast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -55,12 +60,18 @@ public class MainActivity extends AppCompatActivity {
     LottieAnimationView saveButton = findViewById( R.id.saveButton );
     LottieAnimationView resetButton = findViewById( R.id.resetButton );
     ArrayList<TextView> Numbers = new ArrayList<>( Arrays.asList( n1, n2, n3, n4, n5, n6 ) );
+
+//    Toast.makeText(getApplicationContext(), "클릭하세요.", Toast.LENGTH_LONG).show();
+        toast=Toast.makeText(this,"돋보기를 클릭하세요.", Toast.LENGTH_LONG);
+        toast.setGravity( Gravity.TOP,0,1420 );
+        toast.show();
+
     final CountDownTimer countDownTimer = new CountDownTimer( 2000, 100 ) {
             //2초 동안 0.1초의 간격으로 onTick 메소드를 호출합니다
             @Override
             public void onFinish() {
             } //종료
-
+            //로또번호 생성 및 중복숫자 제외 및 저장
             @Override
             public void onTick(long p0) {
                 for (int i = 0; i < 6; i++) {
@@ -77,7 +88,10 @@ public class MainActivity extends AppCompatActivity {
         lotteryButton.setOnClickListener( view -> {
                 lotteryButton.playAnimation();
                 countDownTimer.start();
-        } );
+            toast=Toast.makeText(getApplicationContext(),"Save 를 클릭하세요.", Toast.LENGTH_LONG);
+            toast.setGravity( Gravity.TOP|Gravity.START,300,1420 );
+            toast.show();
+        });
         saveButton.setOnClickListener( view -> {
             saveButton.playAnimation();
 
@@ -94,6 +108,9 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < save3.length; i++) {
                     save3[i].setText( (String.valueOf( random[i] )) );
                 }
+                toast=Toast.makeText(getApplicationContext(),"$그림을 클릭하세요.", Toast.LENGTH_LONG);
+                toast.setGravity( Gravity.TOP|Gravity.START,300,1420 );
+                toast.show();
             }
         } );
         resetButton.setOnClickListener( view -> {

@@ -11,7 +11,7 @@
         android:id="@+id/lottieAnimationView"
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:scaleType="fitCenter"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -26,17 +26,17 @@
         android:id="@+id/show_numbers"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@color/purple_200"
+        android:background="#ffffff00"
         android:gravity="center_horizontal|top"
         android:text="@string/lucky_numbers"
-        android:textColor="#4527A0"
+        android:textColor="#004D40"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.35"/>
+        app:layout_constraintVertical_bias="0.50" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
