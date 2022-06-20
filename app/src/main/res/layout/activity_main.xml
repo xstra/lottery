@@ -10,7 +10,7 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieAnimationView"
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="220dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,11 +25,13 @@
     <TextView
         android:id="@+id/show_numbers"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#ffffff00"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="55dp"
+        android:background="#C6FF00"
         android:gravity="center_horizontal|top"
         android:text="@string/lucky_numbers"
-        android:textColor="#004D40"
+        android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv1"
@@ -48,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357">
+        app:layout_constraintVertical_bias="0.330">
 
         <TextView
             android:id="@+id/number1"
@@ -125,15 +127,15 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55">
+        app:layout_constraintVertical_bias="0.48">
 
         <TextView
             android:id="@+id/save11"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
             android:gravity="center"
+            android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -142,8 +144,8 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
             android:gravity="center"
+            android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -152,7 +154,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -162,7 +164,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -172,7 +174,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -182,7 +184,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -194,18 +196,18 @@
         android:layout_height="50dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.60">
+        app:layout_constraintVertical_bias="0.53">
 
         <TextView
             android:id="@+id/save21"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -215,7 +217,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -225,7 +227,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -235,7 +237,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -245,7 +247,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -255,7 +257,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -266,18 +268,18 @@
         android:layout_height="50dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65">
+        app:layout_constraintVertical_bias="0.58">
 
         <TextView
             android:id="@+id/save31"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -287,7 +289,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -297,7 +299,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -307,7 +309,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -317,7 +319,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -327,12 +329,155 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25sp"
             android:textStyle="bold" />
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/save4Layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63">
 
+        <TextView
+            android:id="@+id/save41"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save42"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save43"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save44"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save45"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save46"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/save5Layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68">
+
+        <TextView
+            android:id="@+id/save51"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save52"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save53"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save54"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save55"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save56"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="3dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
     <TextView
         android:id="@+id/tv"
         android:layout_width="136dp"

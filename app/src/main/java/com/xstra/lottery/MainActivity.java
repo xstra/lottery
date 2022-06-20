@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     TextView[] save1 = new TextView[6];
     TextView[] save2 = new TextView[6];
     TextView[] save3 = new TextView[6];
+    TextView[] save4 = new TextView[6];
+    TextView[] save5 = new TextView[6];
 
     save1[0] = findViewById( R.id.save11 );
     save1[1] = findViewById( R.id.save12 );
@@ -54,6 +56,20 @@ public class MainActivity extends AppCompatActivity {
     save3[4] = findViewById( R.id.save35 );
     save3[5] = findViewById( R.id.save36 );
 
+    save4[0] = findViewById( R.id.save41 );
+    save4[1] = findViewById( R.id.save42 );
+    save4[2] = findViewById( R.id.save43 );
+    save4[3] = findViewById( R.id.save44 );
+    save4[4] = findViewById( R.id.save45 );
+    save4[5] = findViewById( R.id.save46 );
+
+    save5[0] = findViewById( R.id.save51 );
+    save5[1] = findViewById( R.id.save52 );
+    save5[2] = findViewById( R.id.save53 );
+    save5[3] = findViewById( R.id.save54 );
+    save5[4] = findViewById( R.id.save55 );
+    save5[5] = findViewById( R.id.save56 );
+
     final int[] random =new int[6];
 
     LottieAnimationView lotteryButton = findViewById( R.id.lotteryButton );
@@ -62,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<TextView> Numbers = new ArrayList<>( Arrays.asList( n1, n2, n3, n4, n5, n6 ) );
 
 //    Toast.makeText(getApplicationContext(), "클릭하세요.", Toast.LENGTH_LONG).show();
-        toast=Toast.makeText(this,"돋보기를 클릭하세요.", Toast.LENGTH_LONG);
-        toast.setGravity( Gravity.TOP,0,1420 );
+        toast=Toast.makeText(this,"행운 숫자를 보고싶으면 돋보기를 클릭하세요.", Toast.LENGTH_LONG);
+        toast.setGravity( Gravity.TOP,0,1570 );
         toast.show();
 
     final CountDownTimer countDownTimer = new CountDownTimer( 2000, 100 ) {
@@ -88,8 +104,9 @@ public class MainActivity extends AppCompatActivity {
         lotteryButton.setOnClickListener( view -> {
                 lotteryButton.playAnimation();
                 countDownTimer.start();
-            toast=Toast.makeText(getApplicationContext(),"Save 를 클릭하세요.", Toast.LENGTH_LONG);
-            toast.setGravity( Gravity.TOP|Gravity.START,300,1420 );
+            toast=Toast.makeText(getApplicationContext(),"저장을 원하시면 Save 를 클릭하세요.", Toast.LENGTH_LONG);
+            toast.setGravity( Gravity.TOP,0,1570 );
+            //            toast.setGravity( Gravity.TOP|Gravity.START,200,1420 );
             toast.show();
         });
         saveButton.setOnClickListener( view -> {
@@ -108,10 +125,19 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < save3.length; i++) {
                     save3[i].setText( (String.valueOf( random[i] )) );
                 }
-                toast=Toast.makeText(getApplicationContext(),"$그림을 클릭하세요.", Toast.LENGTH_LONG);
-                toast.setGravity( Gravity.TOP|Gravity.START,300,1420 );
-                toast.show();
+            }    else if (count == 4 || save4[0].getText().toString().equals( "" )) {
+                for (int i = 0; i < save4.length; i++) {
+                    save4[i].setText( (String.valueOf( random[i] )) );
+                }
+            }   else if (count == 5 || save5[0].getText().toString().equals( "" )) {
+                for (int i = 0; i < save5.length; i++) {
+                    save5[i].setText( (String.valueOf( random[i] )) );
+                }
             }
+                toast=Toast.makeText(getApplicationContext(),"삭제를 원하시면 $그림을 클릭하세요.", Toast.LENGTH_LONG);
+                toast.setGravity( Gravity.TOP,0,1570 );
+            //               toast.setGravity( Gravity.TOP|Gravity.START,200,1420 );
+                toast.show();
         } );
         resetButton.setOnClickListener( view -> {
             resetButton.playAnimation();
@@ -119,6 +145,8 @@ public class MainActivity extends AppCompatActivity {
                 save1[i].setText(null);
                 save2[i].setText(null);
                 save3[i].setText(null);
+                save4[i].setText(null);
+                save5[i].setText(null);
             }
         });
     }
